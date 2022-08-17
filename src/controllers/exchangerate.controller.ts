@@ -1,13 +1,13 @@
 import { Controller, Get, Post, Body, Res, Req, Query, UseGuards } from '@nestjs/common';
-import { CreateExchangeRate } from 'src/dtos/createExchangeRate.dto';
+import { CreateExchangeRate } from '../dtos/createExchangeRate.dto';
 import { ExchangerateService } from '../services/exchangerate.service';
 import { sendErrorResponse, sendSuccessResponse } from '../helpers/response';
 import { Response } from 'express';
-import { GetExchangeQuery } from 'src/dtos/getExchangeQuery.dto';
-import { ConvertCurrencyDto } from 'src/dtos/ConvertCurrency.dto';
+import { GetExchangeQuery } from '../dtos/getExchangeQuery.dto';
+import { ConvertCurrencyDto } from '../dtos/convertCurrency.dto';
 import { AuthGuard } from '@nestjs/passport';
-import { Roles } from 'src/decorators/auth.decorator';
-import { RolesGuard } from 'src/gaurds/roles.gaurds';
+import { Roles } from '../decorators/auth.decorator';
+import { RolesGuard } from '../gaurds/roles.gaurds';
 
 
 @Controller("exchange")

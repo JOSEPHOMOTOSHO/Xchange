@@ -2,8 +2,8 @@ import { IsNumber, IsString } from "class-validator";
 
 export class GetExchangeQuery {
     @IsString()
-    baseCurrency: string;
+    readonly baseCurrency: string;
 
     @IsString()
-    quoteCurrency: string;
+    readonly quoteCurrency: string;
 };

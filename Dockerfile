@@ -5,8 +5,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm config set -g production false
 RUN npm install
-# RUN npm install @nestjs/cli
 COPY . ./
 RUN npm run build
-EXPOSE 5000
+EXPOSE 3000
 CMD ["npm" , "start"]

@@ -1,11 +1,11 @@
 import { Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { Model } from "mongoose";
-import { CreateExchangeRate } from "src/dtos/createExchangeRate.dto";
-import { Exchangerate } from "src/Interfaces/exchangerate.interface";
-import { makeResponse } from "src/helpers/response";
-import { GetExchangeQuery } from "src/dtos/getExchangeQuery.dto";
-import { ConvertCurrencyDto } from "src/dtos/ConvertCurrency.dto";
+import { CreateExchangeRate } from "../dtos/createExchangeRate.dto";
+import { Exchangerate } from "../Interfaces/exchangerate.interface";
+import { makeResponse } from "../helpers/response";
+import { GetExchangeQuery } from "../dtos/getExchangeQuery.dto";
+import { ConvertCurrencyDto } from "../dtos/convertCurrency.dto";
 
 @Injectable()
 export class ExchangeRateRepository {

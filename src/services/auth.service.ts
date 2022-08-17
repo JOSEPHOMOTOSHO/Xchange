@@ -3,8 +3,8 @@ import { JwtService } from '@nestjs/jwt';
 import { InjectModel } from '@nestjs/mongoose';
 import mongoose, { Model } from 'mongoose';
 import { sign } from 'jsonwebtoken';
-import { User } from 'src/Interfaces/user.interface';
-import { JwtPayload } from 'src/Interfaces/jwt-payload.interface';
+import { User } from '../Interfaces/user.interface';
+import { JwtPayload } from '../Interfaces/jwtPayload.interface';
 
 @Injectable()
 export class AuthService {

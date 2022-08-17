@@ -1,8 +1,8 @@
 import { Request } from 'express';
 import { Controller, Post, Body, Req } from '@nestjs/common';
-import { CreateUserDto } from 'src/dtos/createUser.dto';
-import { UserService } from 'src/services/users.service';
-import { SignInUserDto } from 'src/dtos/signInUser.dto';
+import { CreateUserDto } from '../dtos/createUser.dto';
+import { UserService } from '../services/users.service';
+import { SignInUserDto } from '../dtos/signInUser.dto';
 
 
 

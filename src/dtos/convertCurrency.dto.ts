@@ -1,12 +1,19 @@
-import { IsNumber, IsString } from "class-validator";
+import { IsNotEmpty, IsNumber, IsString, MaxLength, MinLength } from "class-validator";
 
 export class ConvertCurrencyDto {
+    @IsNotEmpty()
     @IsString()
-    baseCurrency: string;
+    @MinLength(3)
+    @MaxLength(6)
+    readonly baseCurrency: string;
 
+    @IsNotEmpty()
     @IsString()
-    quoteCurrency: string;
+    @MinLength(3)
+    @MaxLength(6)
+    readonly quoteCurrency: string;
 
     @IsNumber()
-    amount: number;
+    @IsNotEmpty()
+    readonly amount: number;
 };
