@@ -2,7 +2,7 @@ import { CreateExchangeRate } from "src/dtos/createExchangeRate.dto";
 import { Injectable } from "@nestjs/common";
 import { ExchangeRateRepository } from "src/repositories/exchangerate.repository";
 import { GetExchangeQuery } from "src/dtos/getExchangeQuery.dto";
-import { ConvertCurrencyDto } from "src/dtos/ConvertCurrency.dto";
+import { ConvertCurrencyDto } from "../dtos/ConvertCurrency.dto";
 
 
 
